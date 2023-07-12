@@ -1,0 +1,70 @@
+package atm_system;
+
+public class Account {
+    private String cardId;  // 用户卡号
+    private String userName; // 用户名字
+    private char sex; // 用户性别
+    private String passWord; // 账户密码
+    private double money; // 账户金额
+    private double limit;  // 每次取款限制
+
+    public Account() {
+    }
+
+    public Account(String cardId, String userName, char sex, String passWord, double money, double limit) {
+        this.cardId = cardId;
+        this.userName = userName;
+        this.sex = sex;
+        this.passWord = passWord;
+        this.money = money;
+        this.limit = limit;
+    }
+
+    public String getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(String cardId) {
+        this.cardId = cardId;
+    }
+
+    public String getUserName() {
+        return userName + (sex == '男' ? "先生" : "女士");
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public double getLimit() {
+        return limit;
+    }
+
+    public void setLimit(double limit) {
+        this.limit = limit;
+    }
+}
